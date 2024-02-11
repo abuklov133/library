@@ -4,15 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6bd5f6a5-4c9e-4006-8fb1-bc9ef48a4ffc" name="Changes" comment="Старт репозитория library">
+    <list default="true" id="6bd5f6a5-4c9e-4006-8fb1-bc9ef48a4ffc" name="Changes" comment="Изменения настроек проекта library">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/library/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/library/Storage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/library/StorageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -30,31 +43,130 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.App.executor": "Run",
+    "Application.Storage.executor": "Run",
+    "JUnit.StorageTest.executor": "Run",
+    "JUnit.StorageTest.whenAdded100ElementsThenSizeMustBede100.executor": "Run",
+    "JUnit.StorageTest.whenTestFindAll.executor": "Run",
+    "JUnit.StorageTest.whenTestFindById.executor": "Run",
+    "JUnit.StorageTest.whenTestFindByNameCheckArrayLength.executor": "Run",
+    "JUnit.StorageTest.whenTestFindByNameCheckSecondBookName.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "Maven.library [package].executor": "Run",
+    "Maven.library [test].executor": "Run",
+    "Maven.ru.library [package].executor": "Run",
+    "Maven.ru.library [test].executor": "Run",
+    "Maven.ru.library [validate].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/projects/library/checkstyle.xml",
-    "settings.editor.selected.configurable": "org.infernus.idea.checkstyle.CheckStyleConfigurable"
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
   }
 }]]></component>
-  <component name="RunManager">
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.App" />
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="ru.library" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="ru.library" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.StorageTest.whenTestFindByNameCheckSecondBookName">
+    <configuration name="StorageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="library" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="ru.library.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="ru.library" />
+      <option name="MAIN_CLASS_NAME" value="ru.library.StorageTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StorageTest.whenAdded100ElementsThenSizeMustBede100" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="library" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.library.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.library" />
+      <option name="MAIN_CLASS_NAME" value="ru.library.StorageTest" />
+      <option name="METHOD_NAME" value="whenAdded100ElementsThenSizeMustBede100" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StorageTest.whenTestFindAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="library" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.library.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.library" />
+      <option name="MAIN_CLASS_NAME" value="ru.library.StorageTest" />
+      <option name="METHOD_NAME" value="whenTestFindAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StorageTest.whenTestFindByNameCheckArrayLength" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="library" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.library.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.library" />
+      <option name="MAIN_CLASS_NAME" value="ru.library.StorageTest" />
+      <option name="METHOD_NAME" value="whenTestFindByNameCheckArrayLength" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StorageTest.whenTestFindByNameCheckSecondBookName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="library" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.library.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.library" />
+      <option name="MAIN_CLASS_NAME" value="ru.library.StorageTest" />
+      <option name="METHOD_NAME" value="whenTestFindByNameCheckSecondBookName" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.App" />
+        <item itemvalue="JUnit.StorageTest.whenTestFindByNameCheckSecondBookName" />
+        <item itemvalue="JUnit.StorageTest.whenAdded100ElementsThenSizeMustBede100" />
+        <item itemvalue="JUnit.StorageTest.whenTestFindByNameCheckArrayLength" />
+        <item itemvalue="JUnit.StorageTest" />
+        <item itemvalue="JUnit.StorageTest.whenTestFindAll" />
       </list>
     </recent_temporary>
   </component>
@@ -82,11 +194,20 @@
       <option name="project" value="LOCAL" />
       <updated>1707569312502</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Изменения настроек проекта library">
+      <option name="closed" value="true" />
+      <created>1707571382893</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1707571382893</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Старт репозитория library" />
-    <option name="LAST_COMMIT_MESSAGE" value="Старт репозитория library" />
+    <MESSAGE value="Изменения настроек проекта library" />
+    <option name="LAST_COMMIT_MESSAGE" value="Изменения настроек проекта library" />
   </component>
 </project>
