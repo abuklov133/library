@@ -63,4 +63,34 @@ class StorageTest {
         Book[] result = storage.findByName(second.getName());
         assertThat(result[0].getName()).isEqualTo(second.getName());
     }
+
+    @Test
+    void ifReplaceBookIsSuccessful() {
+        Storage storage = new Storage();
+        Book book = new Book("book");
+        Book book1 = new Book("book1");
+        Book book2 = new Book("book2");
+        Book bookReplace = new Book("bookReplace");
+        storage.add(book);
+        storage.add(book1);
+        storage.add(book2);
+        int index = book1.getId();
+        storage.replace(index, bookReplace);
+        Book expected = storage.findById(index);
+        assertThat(expected.getName()).isEqualTo(bookReplace.getName());
+    }
+
+    @Test
+    void ifReplaceBookIsNotSuccessful() {
+        Storage storage = new Storage();
+        Book book = new Book("book");
+        Book book1 = new Book("book1");
+        Book book2 = new Book("book2");
+        Book bookReplace = new Book("bookReplace");
+        storage.add(book);
+        storage.add(book1);
+        storage.add(book2);
+       boolean result = storage.replace(102, bookReplace);
+        assertThat(result).isFalse();
+    }
 }

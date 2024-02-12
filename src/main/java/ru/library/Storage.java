@@ -14,15 +14,8 @@ public class Storage {
     }
 
     public Book findById(int id) {
-        Book result = null;
-        for (int i = 0; i < size; i++) {
-            Book book = books[i];
-            if (books[i].getId() == id) {
-                result = book;
-                break;
-            }
-        }
-        return result;
+        int index = indexOfId(id);
+        return index != -1 ? books[index] : null;
     }
 
     public Book[] findAll() {
@@ -43,27 +36,31 @@ public class Storage {
         Book[] result = new Book[size];
         for (int i = 0; i < size; i++) {
             Book book = books[i];
-            if (book.getName() == key) {
-                result[count] = book;
-                count++;
+            if (book.getName().equals(key)) {
+                result[count++] = book;
             }
         }
         return Arrays.copyOf(result, count);
     }
 
-    public static void main(String[] args) {
-        Book book = new Book();
-        Book book2 = new Book();
-        Book book1 = new Book();
-        Storage storage = new Storage();
-        book.setName("test");
-        book2.setName("test");
-        book1.setName("test1");
-        storage.add(book);
-        storage.add(book1);
-        storage.add(book2);
-       Book result = storage.findById(2);
-        System.out.println(result);
+    public boolean replace(int id, Book book) {
+        int index = indexOfId(id);
+        boolean result = index != -1;
+        if (result) {
+            book.setId(id);
+            books[index] = book;
+        }
+        return result;
+    }
 
+    private int indexOfId(int id) {
+        int result = -1;
+        for (int i = 0; i < size; i++) {
+            if (books[i].getId() == id) {
+                result = i;
+                break;
+            }
+        }
+        return result;
     }
 }
