@@ -57,7 +57,7 @@ public class Storage {
         int index = indexOfId(id);
         boolean result = index != -1;
         if (result) {
-            System.arraycopy(books, index, books, index + 1, size - index - 1);
+            System.arraycopy(books, index + 1, books, index, size - index - 1);
             books[size - 1] = null;
             size--;
         }

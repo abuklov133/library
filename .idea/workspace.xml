@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6bd5f6a5-4c9e-4006-8fb1-bc9ef48a4ffc" name="Changes" comment="Метод замены заявки.">
+    <list default="true" id="6bd5f6a5-4c9e-4006-8fb1-bc9ef48a4ffc" name="Changes" comment="7. Метод удаления заявки">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/library/Storage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/library/Storage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/library/StorageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/library/StorageTest.java" afterDir="false" />
@@ -79,7 +79,7 @@
       <recent name="ru.library" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.StorageTest.whenDeleteBookIsNotSuccessful">
+  <component name="RunManager" selected="JUnit.StorageTest.whenDeleteBookIsSuccessful">
     <configuration name="Storage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.library.Storage" />
       <module name="library" />
@@ -158,9 +158,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.StorageTest.whenDeleteBookIsNotSuccessful" />
         <item itemvalue="JUnit.StorageTest.whenDeleteBookIsSuccessful" />
         <item itemvalue="Application.Storage" />
+        <item itemvalue="JUnit.StorageTest.whenDeleteBookIsNotSuccessful" />
         <item itemvalue="JUnit.StorageTest" />
         <item itemvalue="JUnit.StorageTest.ifReplaceBookIsNotSuccessful" />
       </list>
@@ -222,7 +222,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707720042962</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="7. Метод удаления заявки">
+      <option name="closed" value="true" />
+      <created>1707728737045</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1707728737045</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -230,6 +238,7 @@
     <MESSAGE value="Изменения настроек проекта library" />
     <MESSAGE value="Storage - хранилище" />
     <MESSAGE value="Метод замены заявки." />
-    <option name="LAST_COMMIT_MESSAGE" value="Метод замены заявки." />
+    <MESSAGE value="7. Метод удаления заявки" />
+    <option name="LAST_COMMIT_MESSAGE" value="7. Метод удаления заявки" />
   </component>
 </project>

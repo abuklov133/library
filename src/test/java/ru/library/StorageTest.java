@@ -98,10 +98,13 @@ class StorageTest {
     void whenDeleteBookIsSuccessful() {
         Storage storage = new Storage();
         Book book = new Book("book");
+        Book book1 = new Book("book1");
         storage.add(book);
+        storage.add(book1);
         int id = book.getId();
         storage.delete(id);
         assertThat(storage.findById(id)).isNull();
+        assertThat(storage.findAll()[0]).isEqualTo(book1);
     }
 
     @Test
