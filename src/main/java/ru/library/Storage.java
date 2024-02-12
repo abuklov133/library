@@ -3,7 +3,7 @@ package ru.library;
 import java.util.Arrays;
 
 public class Storage {
-    private final Book[] books = new Book[100];
+    private final Book[] books = new Book[2];
     private int ids = 1;
     private int size = 0;
 
@@ -53,6 +53,16 @@ public class Storage {
         return result;
     }
 
+    public void delete(int id) {
+        int index = indexOfId(id);
+        boolean result = index != -1;
+        if (result) {
+            System.arraycopy(books, index, books, index + 1, size - index - 1);
+            books[size - 1] = null;
+            size--;
+        }
+    }
+
     private int indexOfId(int id) {
         int result = -1;
         for (int i = 0; i < size; i++) {
@@ -62,5 +72,16 @@ public class Storage {
             }
         }
         return result;
+    }
+
+    public static void main(String[] args) {
+        Storage storage = new Storage();
+        for (int i = 0; i < storage.books.length; i++) {
+            Book book = new Book("book" + i);
+            storage.add(book);
+        }
+        System.out.println(Arrays.toString(storage.books));
+        storage.delete(1);
+        System.out.println(Arrays.toString(storage.books));
     }
 }

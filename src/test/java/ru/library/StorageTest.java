@@ -90,7 +90,27 @@ class StorageTest {
         storage.add(book);
         storage.add(book1);
         storage.add(book2);
-       boolean result = storage.replace(102, bookReplace);
+        boolean result = storage.replace(102, bookReplace);
         assertThat(result).isFalse();
     }
+
+    @Test
+    void whenDeleteBookIsSuccessful() {
+        Storage storage = new Storage();
+        Book book = new Book("book");
+        storage.add(book);
+        int id = book.getId();
+        storage.delete(id);
+        assertThat(storage.findById(id)).isNull();
+    }
+
+    @Test
+    void whenDeleteBookIsNotSuccessful() {
+        Storage storage = new Storage();
+        Book book = new Book("book");
+        storage.add(book);
+        storage.delete(1000);
+        assertThat(storage.findById(book.getId()).getName()).isEqualTo("book");
+    }
 }
+

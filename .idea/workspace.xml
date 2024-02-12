@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6bd5f6a5-4c9e-4006-8fb1-bc9ef48a4ffc" name="Changes" comment="Изменения настроек проекта library">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/library/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/library/Storage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/library/StorageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="6bd5f6a5-4c9e-4006-8fb1-bc9ef48a4ffc" name="Changes" comment="Метод замены заявки.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/library/Storage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/library/Storage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/library/StorageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/library/StorageTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +40,11 @@
     "Application.App.executor": "Run",
     "Application.Storage.executor": "Run",
     "JUnit.StorageTest.executor": "Run",
+    "JUnit.StorageTest.ifReplaceBookIsNotSuccessful.executor": "Run",
+    "JUnit.StorageTest.ifReplaceBookIsSuccessful.executor": "Run",
     "JUnit.StorageTest.whenAdded100ElementsThenSizeMustBede100.executor": "Run",
+    "JUnit.StorageTest.whenDeleteBookIsNotSuccessful.executor": "Run",
+    "JUnit.StorageTest.whenDeleteBookIsSuccessful.executor": "Run",
     "JUnit.StorageTest.whenTestFindAll.executor": "Run",
     "JUnit.StorageTest.whenTestFindById.executor": "Run",
     "JUnit.StorageTest.whenTestFindByNameCheckArrayLength.executor": "Run",
@@ -80,7 +79,20 @@
       <recent name="ru.library" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.StorageTest.whenTestFindByNameCheckSecondBookName">
+  <component name="RunManager" selected="JUnit.StorageTest.whenDeleteBookIsNotSuccessful">
+    <configuration name="Storage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.library.Storage" />
+      <module name="library" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.library.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="StorageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="library" />
       <extension name="coverage">
@@ -96,7 +108,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StorageTest.whenAdded100ElementsThenSizeMustBede100" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StorageTest.ifReplaceBookIsNotSuccessful" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="library" />
       <extension name="coverage">
         <pattern>
@@ -106,13 +118,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="ru.library" />
       <option name="MAIN_CLASS_NAME" value="ru.library.StorageTest" />
-      <option name="METHOD_NAME" value="whenAdded100ElementsThenSizeMustBede100" />
+      <option name="METHOD_NAME" value="ifReplaceBookIsNotSuccessful" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StorageTest.whenTestFindAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StorageTest.whenDeleteBookIsNotSuccessful" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="library" />
       <extension name="coverage">
         <pattern>
@@ -122,13 +134,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="ru.library" />
       <option name="MAIN_CLASS_NAME" value="ru.library.StorageTest" />
-      <option name="METHOD_NAME" value="whenTestFindAll" />
+      <option name="METHOD_NAME" value="whenDeleteBookIsNotSuccessful" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StorageTest.whenTestFindByNameCheckArrayLength" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StorageTest.whenDeleteBookIsSuccessful" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="library" />
       <extension name="coverage">
         <pattern>
@@ -138,23 +150,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="ru.library" />
       <option name="MAIN_CLASS_NAME" value="ru.library.StorageTest" />
-      <option name="METHOD_NAME" value="whenTestFindByNameCheckArrayLength" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StorageTest.whenTestFindByNameCheckSecondBookName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="library" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.library.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.library" />
-      <option name="MAIN_CLASS_NAME" value="ru.library.StorageTest" />
-      <option name="METHOD_NAME" value="whenTestFindByNameCheckSecondBookName" />
+      <option name="METHOD_NAME" value="whenDeleteBookIsSuccessful" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -162,11 +158,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.StorageTest.whenTestFindByNameCheckSecondBookName" />
-        <item itemvalue="JUnit.StorageTest.whenAdded100ElementsThenSizeMustBede100" />
-        <item itemvalue="JUnit.StorageTest.whenTestFindByNameCheckArrayLength" />
+        <item itemvalue="JUnit.StorageTest.whenDeleteBookIsNotSuccessful" />
+        <item itemvalue="JUnit.StorageTest.whenDeleteBookIsSuccessful" />
+        <item itemvalue="Application.Storage" />
         <item itemvalue="JUnit.StorageTest" />
-        <item itemvalue="JUnit.StorageTest.whenTestFindAll" />
+        <item itemvalue="JUnit.StorageTest.ifReplaceBookIsNotSuccessful" />
       </list>
     </recent_temporary>
   </component>
@@ -202,12 +198,38 @@
       <option name="project" value="LOCAL" />
       <updated>1707571382893</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Изменения настроек проекта library">
+      <option name="closed" value="true" />
+      <created>1707670609948</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1707670609948</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Storage - хранилище">
+      <option name="closed" value="true" />
+      <created>1707670793949</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1707670793949</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Метод замены заявки.">
+      <option name="closed" value="true" />
+      <created>1707720042962</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1707720042962</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Старт репозитория library" />
     <MESSAGE value="Изменения настроек проекта library" />
-    <option name="LAST_COMMIT_MESSAGE" value="Изменения настроек проекта library" />
+    <MESSAGE value="Storage - хранилище" />
+    <MESSAGE value="Метод замены заявки." />
+    <option name="LAST_COMMIT_MESSAGE" value="Метод замены заявки." />
   </component>
 </project>
