@@ -12,7 +12,7 @@ public class LibraryWork {
             if (select == 0) {
                 System.out.println("The user has selected " + select);
                 System.out.println("==Add a new book to the catalog==");
-                System.out.print("Enter the title of the book");
+                System.out.print("Enter the title of the book:  ");
                 String name = scanner.nextLine();
                 Book book = new Book(name);
                 storage.add(book);
@@ -29,16 +29,24 @@ public class LibraryWork {
                 }
             } else if (select == 2) {
                 System.out.println("==Replacing the book in the catalog==");
-                System.out.print("Enter id:");
+                System.out.print("Enter id: ");
                 int id = Integer.parseInt(scanner.nextLine());
-                System.out.print("Enter a book's title");
+                System.out.print("Enter a book's title: ");
                 String title = scanner.nextLine();
                 Book book = new Book(title);
-               if (storage.replace(id, book)) {
-                   System.out.println("The book has been successfully replaced");
-               } else {
-                   System.out.println("Replacement error");
-               }
+                if (storage.replace(id, book)) {
+                    System.out.println("The book has been successfully replaced");
+                } else {
+                    System.out.println("Replacement error");
+                }
+            } else if (select == 3) {
+                System.out.println("==Deleting a book from a catalog==");
+                System.out.print("Enter id: ");
+                int id = Integer.parseInt(scanner.nextLine());
+                Book book = storage.findById(id);
+                storage.delete(id);
+                System.out.println(book != null ? "The book was deleted successfully"
+                        : "Error of deleting");
             }
         }
     }
