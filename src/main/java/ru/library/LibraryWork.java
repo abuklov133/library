@@ -12,7 +12,7 @@ public class LibraryWork {
             if (select == 0) {
                 System.out.println("The user has selected " + select);
                 System.out.println("==Add a new book to the catalog==");
-                System.out.println("Enter the title of the book");
+                System.out.print("Enter the title of the book");
                 String name = scanner.nextLine();
                 Book book = new Book(name);
                 storage.add(book);
@@ -29,9 +29,9 @@ public class LibraryWork {
                 }
             } else if (select == 2) {
                 System.out.println("==Replacing the book in the catalog==");
-                System.out.println("Enter id:");
+                System.out.print("Enter id:");
                 int id = Integer.parseInt(scanner.nextLine());
-                System.out.println("Enter a book's title");
+                System.out.print("Enter a book's title");
                 String title = scanner.nextLine();
                 Book book = new Book(title);
                if (storage.replace(id, book)) {
