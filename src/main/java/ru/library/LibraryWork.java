@@ -17,8 +17,16 @@ public class LibraryWork {
                 Book book = new Book(name);
                 storage.add(book);
                 System.out.println("Added a new book: " + book);
-            } else if (select == 6) {
-                run = false;
+            } else if (select == 1) {
+                System.out.println("==We display the entire list of books==");
+                Book[] books = storage.findAll();
+                if (books.length != 0) {
+                    for (Book book : books) {
+                        System.out.print(book);
+                    }
+                } else {
+                    System.out.println("There are not books in the vault yet.\n");
+                }
             }
         }
     }
