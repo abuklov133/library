@@ -57,6 +57,20 @@ public class LibraryWork {
                 } else {
                     System.out.println("The book with entered id was not found");
                 }
+            } else if (select == 5) {
+                System.out.println("==The book will be displayed according to the entered title==");
+                System.out.println("Enter a title");
+                String title = scanner.nextLine();
+                Book[] booksByName = storage.findByName(title);
+                if (booksByName.length > 0) {
+                    for (Book book : booksByName) {
+                        System.out.println(book);
+                    }
+                } else {
+                    System.out.println("No books were found by the entered name");
+                }
+            } else if (select == 6) {
+                run = false;
             }
         }
     }
@@ -77,3 +91,4 @@ public class LibraryWork {
 
     }
 }
+

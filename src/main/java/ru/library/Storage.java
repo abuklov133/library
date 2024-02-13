@@ -3,7 +3,7 @@ package ru.library;
 import java.util.Arrays;
 
 public class Storage {
-    private final Book[] books = new Book[2];
+    private final Book[] books = new Book[100];
     private int ids = 1;
     private int size = 0;
 
