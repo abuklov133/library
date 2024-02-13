@@ -47,6 +47,16 @@ public class LibraryWork {
                 storage.delete(id);
                 System.out.println(book != null ? "The book was deleted successfully"
                         : "Error of deleting");
+            } else if (select == 4) {
+                System.out.println("==Find by number==");
+                System.out.println("Enter id: ");
+                int id = Integer.parseInt(scanner.nextLine());
+                Book book = storage.findById(id);
+                if (book != null) {
+                    System.out.println("The book was found by id: " + book);
+                } else {
+                    System.out.println("The book with entered id was not found");
+                }
             }
         }
     }
